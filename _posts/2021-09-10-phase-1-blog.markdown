@@ -1,10 +1,3 @@
----
-layout: post
-title:  "Phase 1 Blog - JS Events"
-date:   2021-09-10 10:19:32 -0400
-categories: jekyll update
-body-class: phase-1
----
 # Phase 1 Blog - JS Events #
 How to set up a Javascript event using addEventListener():
 ```javascript
