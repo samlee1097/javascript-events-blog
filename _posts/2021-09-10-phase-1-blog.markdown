@@ -6,7 +6,7 @@ categories: jekyll update
 body-class: phase-1
 ---
 How to set up a Javascript event using addEventListener():
-```
+```javascript
 element.addEventListener("event", function)
 ```
 
