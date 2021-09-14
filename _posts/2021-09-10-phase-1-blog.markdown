@@ -79,6 +79,6 @@ function logKey(event) {
 }
 ```
 
-There are tons of JavaScript [events](https://developer.mozilla.org/en-US/docs/Web/Events){:target="_blank"}, each providing the user a unique and dynamic experience.
+There are tons of JavaScript [events](https://developer.mozilla.org/en-US/docs/Web/Events), each providing the user a unique and dynamic experience.
 
 _(Did you know that by clicking on the hyperlink, you just executed a "click" event!)_<br/>
