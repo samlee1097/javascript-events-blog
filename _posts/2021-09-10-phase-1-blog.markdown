@@ -1,0 +1,87 @@
+---
+layout: post
+title:  "Phase 1 Blog - JS Events"
+date:   2021-09-10 10:19:32 -0400
+categories: jekyll update
+body-class: phase-1
+---
+How to set up a Javascript event using addEventListener():
+{% highlight js %}
+element.addEventListener("event", function)
+{% endhighlight %}
+
+### Events ###
+An **event** is _something (usually planned) that happens_ and events play an important role not only allowing us to get things done but also allowing our lives to be filled with choices. Let's take a step back and observe how events occur in our everyday lives.
+
+Bob has a special morning routine and he has been been following this routine his entire life. 
+
+Here is Bob's special morning routine:
+
+1. Bob _wakes_ up at 7:00AM
+2. Bob _clicks_ OFF to stop his phone alarm
+3. Bob _sends_ a text to his boss saying that he will be on time
+4. Bob _holds down_ the button on his water cooler to fill his water bottle
+5. Bob _leaves_ to go to work at 7:45AM <br/><br/>
+
+| Morning Events | Function/Purpose | JavaScript Event |
+|-------|--------|---------|
+| Bob _wakes_ up at 7:00AM | Lets Bob get onto his day! | `'DOMContentLoaded'` | 
+| Bob _clicks_ OFF on his screen | Stops the loud alarm on his phone | `'click'` | 
+| Bob _sends_ a text to his boss | Informs his boss that he will be on time | `'submit'` | 
+|  Bob _holds down_ the lever | Releases water to fill his water bottle | `'keydown'` | 
+
+Without events, nothing would happen and Bob wouldn't even wake up to get to his morning routine! 
+
+### Elements ###
+
+Javascript events are linked to HTML tags (elements) that occur when a certain condition is met. These events can be triggered from user interactions such as clicking a mouse or resizing a window. Once the event condition is met, the _handler function_ argument is triggered from the addEventListener. The _handler function_ acts like the requested action that follows the firing of an event. 
+
+### Examples ###
+
+- **'DOMContentLoaded'** - Fires event when the initial HTML document has finished loading and parsed (but doesn't wait for stylesheets, images, and subframes to finish)
+
+{% highlight js %}
+document.addEventListener('DOMContentLoaded', function(){
+    console.log("Hello, World!"); // => "Hello, World!"
+}
+{% endhighlight %}
+
+- **'click'** - Fires event when a pointing device button is both pressed and released while the mouse pointer is located inside the element.
+{% highlight js %}
+const button = document.querySelector('button');
+let counter = 0;
+
+button.addEventListener('click', () => {
+    counter++;
+    button.textContent = `Click count: ${counter}`; // => Increments button text 
+});
+
+{% endhighlight %}
+
+- **'submit'** - Fires when user clicks a submit button or presses _Enter_ while editing a field in a form. 
+
+{% highlight js %}
+const form = document.getElementById('form');
+form.addEventListener('submit', submitMessage);
+
+function submitMessage(event) {
+    event.preventDefault(); //**IMPORTANT** Does not refresh the document upon submit
+    console.log("The form has been submitted"); // => The form has been submitted 
+}
+
+{% endhighlight %}
+
+- **'keydown'** - Fires when a key is pressed, regardless of whether it produces a character value.
+
+{% highlight js %}
+document.addEventListener('keydown', logKey);
+
+function logKey(event) {
+  console.log(`${event.code}`); // => displays the key-pressed on console
+}
+
+{% endhighlight %}
+
+There are tons of JavaScript [events](https://developer.mozilla.org/en-US/docs/Web/Events){:target="_blank"}, each providing the user a unique and dynamic experience.
+
+_(Did you know that by clicking on the hyperlink, you just executed a "click" event!)_<br/>
