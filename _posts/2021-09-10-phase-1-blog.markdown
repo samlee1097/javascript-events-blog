@@ -11,7 +11,7 @@ How to set up a Javascript event using addEventListener():
 element.addEventListener("event", function)
 ```
 
-### Events ###
+## Events ##
 An **event** is _something (usually planned) that happens_ and events play an important role not only allowing us to get things done but also allowing our lives to be filled with choices. Let's take a step back and observe how events occur in our everyday lives.
 
 Bob has a special morning routine and he has been been following this routine his entire life. 
@@ -33,11 +33,11 @@ Here is Bob's special morning routine:
 
 Without events, nothing would happen and Bob wouldn't even wake up to get to his morning routine! 
 
-### Elements ###
+## Elements ##
 
 Javascript events are linked to HTML tags (elements) that occur when a certain condition is met. These events can be triggered from user interactions such as clicking a mouse or resizing a window. Once the event condition is met, the _handler function_ argument is triggered from the addEventListener. The _handler function_ acts like the requested action that follows the firing of an event. 
 
-### Examples ###
+## Examples ##
 
 - **'DOMContentLoaded'** - Fires event when the initial HTML document has finished loading and parsed (but doesn't wait for stylesheets, images, and subframes to finish)
 
