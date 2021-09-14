@@ -6,9 +6,9 @@ categories: jekyll update
 body-class: phase-1
 ---
 How to set up a Javascript event using addEventListener():
-{% highlight js %}
+```
 element.addEventListener("event", function)
-{% endhighlight %}
+```
 
 ### Events ###
 An **event** is _something (usually planned) that happens_ and events play an important role not only allowing us to get things done but also allowing our lives to be filled with choices. Let's take a step back and observe how events occur in our everyday lives.
