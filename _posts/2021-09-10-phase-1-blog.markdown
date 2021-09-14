@@ -40,14 +40,14 @@ Javascript events are linked to HTML tags (elements) that occur when a certain c
 
 - **'DOMContentLoaded'** - Fires event when the initial HTML document has finished loading and parsed (but doesn't wait for stylesheets, images, and subframes to finish)
 
-{% highlight js %}
+```javascript
 document.addEventListener('DOMContentLoaded', function(){
     console.log("Hello, World!"); // => "Hello, World!"
 }
-{% endhighlight %}
+```
 
 - **'click'** - Fires event when a pointing device button is both pressed and released while the mouse pointer is located inside the element.
-{% highlight js %}
+```javascript
 const button = document.querySelector('button');
 let counter = 0;
 
@@ -55,12 +55,11 @@ button.addEventListener('click', () => {
     counter++;
     button.textContent = `Click count: ${counter}`; // => Increments button text 
 });
-
-{% endhighlight %}
+```
 
 - **'submit'** - Fires when user clicks a submit button or presses _Enter_ while editing a field in a form. 
 
-{% highlight js %}
+```javascript
 const form = document.getElementById('form');
 form.addEventListener('submit', submitMessage);
 
@@ -68,19 +67,17 @@ function submitMessage(event) {
     event.preventDefault(); //**IMPORTANT** Does not refresh the document upon submit
     console.log("The form has been submitted"); // => The form has been submitted 
 }
-
-{% endhighlight %}
+```
 
 - **'keydown'** - Fires when a key is pressed, regardless of whether it produces a character value.
 
-{% highlight js %}
+```javascript
 document.addEventListener('keydown', logKey);
 
 function logKey(event) {
   console.log(`${event.code}`); // => displays the key-pressed on console
 }
-
-{% endhighlight %}
+```
 
 There are tons of JavaScript [events](https://developer.mozilla.org/en-US/docs/Web/Events){:target="_blank"}, each providing the user a unique and dynamic experience.
 
