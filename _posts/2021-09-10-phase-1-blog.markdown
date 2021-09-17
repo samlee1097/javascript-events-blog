@@ -28,7 +28,7 @@ Without events, nothing would happen and Bob wouldn't even wake up to get to his
 
 ## Elements ##
 
-Javascript events are linked to HTML tags (elements) that occur when a certain condition is met. These events can be triggered from user interactions such as clicking a mouse or resizing a window. Once the event condition is met, the _handler function_ argument is triggered from the addEventListener. The _handler function_ acts like the requested action that follows the firing of an event. 
+Javascript events are linked to HTML tags/**elements** that occur when a certain condition is met. These events can be triggered from user interactions such as clicking a mouse or resizing a window. Once the event condition is met, the _handler function_ argument is triggered from the addEventListener. The _handler function_ acts like the requested action that follows the firing of an event. 
 
 ## Examples ##
 
